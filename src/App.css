@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100vh;           /* full viewport height */
+}
+
+/* Login Page CSS */
+
+
+#center {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-container {
+    border: 1px solid black; /* 1px thickness, solid style, black color */
+    padding: 40px;           /* optional: adds space inside the border */
+    border-radius: 5px;      /* optional: rounds the corners */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.titleHeader {
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-inputs input {
+  width: 100%;                /* full width of container */
+  max-width: 350px;           /* good size limit */
+  padding: 12px 16px;         /* inner spacing */
+  margin: 8px 0;              /* space between inputs */
+  border: 1px solid #ffffff00;     /* light border */
+  border-radius: 6px;         /* rounded corners */
+  background-color: #f8f8f8;     /* clean white */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  font-size: 16px;            /* readable text size */
+  outline: none;              /* remove default blue outline */
+}
+
+.login-inputs input:focus {
+  border-color: #c4c4c4;         /* black border when focused */
+  box-shadow: 0 0 6px rgba(0,0,0,0.2); /* stronger shadow on focus */
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.login-buttons button {
+    width: 100%; 
+    background-color: #3B3D3C;   /* gray background */
+    color: #ffffff;              /* white text */
+    border: none;                /* remove default border */
+    border-radius: 30px;         /* rounded corners */
+    padding: 12px 35px;          /* good size for click area */
+    font-size: 16px;             /* readable text */
+    text-align: center;          /* centers the text inside */
+    cursor: pointer;             /* pointer cursor on hover */
+    transition: background-color 0.3s ease; /* smooth hover effect */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    margin-bottom: 20px;
+    font-family: "Inter";
+}
+.login-buttons button:hover {
+  background-color: #272727;   /* darker gray on hover */
+}
