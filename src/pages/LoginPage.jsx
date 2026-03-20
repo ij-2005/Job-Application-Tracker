@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import '../App.css'
 
 function LoginPage() {
+
+  const navigate = useNavigate();
 
   const HandleLogin = (event) => {
     event.preventDefault();
@@ -14,7 +16,7 @@ function LoginPage() {
   };
 
   const handleRegister = () => {
-    console.log("Register Clicked.");
+    navigate("/register");
   }
 
   return (
