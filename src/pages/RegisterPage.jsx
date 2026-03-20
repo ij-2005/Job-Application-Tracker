@@ -1,5 +1,6 @@
 import '../App.css'
 import { useNavigate } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 function RegisterPage(){
 
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ function RegisterPage(){
 
           <div className="titleHeader"> 
             <h1>Nice to meet you!</h1>
-            <p className="subTitle"><i>by IJ2005</i></p>
+            <p className="subTitle"><i>by IJ2005 <FaGithub /></i></p>
           </div>
 
           <form className="register-form" onSubmit={handleRegister}>

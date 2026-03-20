@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import '../App.css'
 
 function LoginPage() {
@@ -13,6 +14,7 @@ function LoginPage() {
 
     console.log(`"Email: ${email}`);
     console.log(`Password: ${password}`);
+    navigate("/dashboard"); //DELETE RIGHTAWAY WHEN BACKEND LOGIC IS HERE.
   };
 
   const handleRegister = () => {
@@ -27,7 +29,7 @@ function LoginPage() {
 
           <div className='titleHeader'> 
           <h1>Job Application Tracker</h1>
-          <p className='subTitle'><i>by IJ2005</i></p>
+          <p className='subTitle'><i>by IJ2005 <FaGithub /></i></p>
         </div>
         <form className="login-form" onSubmit={HandleLogin}>
           <div className="login-inputs">
