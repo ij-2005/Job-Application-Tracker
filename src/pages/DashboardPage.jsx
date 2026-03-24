@@ -7,13 +7,13 @@ import SearchBar from '../components/SearchBar';
 import ApplicationTable from '../components/ApplicationTable';
 
 function DashboardPage(){
-
-    const applications = [
+    // hardcoded NO BACKEND YET
+    const applications = [ 
     { id: 1, company_name: "Google", job_title: "SWE", status: "Interview", date_applied: "2026-01-20" },
     { id: 2, company_name: "Stripe", job_title: "Backend", status: "Applied", date_applied: "2026-02-03" }
   ];
-  
-    const stats = {
+
+    const stats = { 
     total: 34,
     interview: 5,
     offers: 1,

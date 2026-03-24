@@ -20,9 +20,25 @@ body {
 /* Components Start here */
 
 .navbar {
-  
+
 }
 
+.stats-card {
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: rgb(252, 251, 251);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 10px 12px rgba(0,0,0,0.1);
+}
+
+/* Colors */
+.stats-card.blue { background-color: #3b82f6; }
+.stats-card.orange { background-color: #f97316; }
+.stats-card.green { background-color: #22c55e; }
+.stats-card.red { background-color: #ef4444; }
 
 
 /* Pages Start here */
@@ -113,7 +129,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-  max-width: 800px;           /* 🔥 control width HERE */
+  max-width: 800px;           /* 🔥 control width HERE Max is 1000px according to #center*/ 
   width: 100%;
 }
 
@@ -171,4 +187,22 @@ body {
 
 .register-button:hover {
   background-color: #00864e;   /* darker gray on hover */
+}
+
+/*Dashboard Page */
+
+.dashboard-container {
+    border: 1px solid black; /* 1px thickness, solid style, black color */
+    padding: 80px;           /* optional: adds space inside the border */
+    border-radius: 6px;      /* optional: rounds the corners */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.stats-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 0px;
 }
