@@ -23,6 +23,8 @@ body {
 
 }
 
+/*StatsCard */
+
 .stats-card {
   padding: 12px;
   border-radius: 8px;
@@ -34,11 +36,45 @@ body {
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
 }
 
-/* Colors */
 .stats-card.blue { background-color: #3b82f6; }
 .stats-card.orange { background-color: #f97316; }
 .stats-card.green { background-color: #22c55e; }
 .stats-card.red { background-color: #ef4444; }
+
+/* SearchBar */
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.search-input input {
+  width: 100%;                /* full width of container */
+  max-width: 350px;           /* good size limit */
+  padding: 12px 16px;         /* inner spacing */
+  margin: 8px 0;              /* space between inputs */
+  border: 1px solid #ffffff00;     /* light border */
+  border-radius: 6px;         /* rounded corners */
+  background-color: #f8f8f8;     /* clean white */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  font-size: 16px;            /* readable text size */
+  outline: none;              /* remove default blue outline */
+}
+
+.filter-dropdown select {
+  width: 100%;                /* full width of container */
+  max-width: 350px;           /* same size limit as input */
+  padding: 12px 16px;         /* inner spacing */
+  margin: 8px 0;              /* space between elements */
+  border: 1px solid #ffffff00; /* light border */
+  border-radius: 6px;         /* rounded corners */
+  background-color: #f8f8f8;  /* clean white background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  font-size: 16px;            /* readable text size */
+  outline: none;              /* remove default outline */
+  cursor: pointer;            /* pointer cursor for dropdown */
+}
 
 
 /* Pages Start here */
@@ -193,7 +229,7 @@ body {
 
 .dashboard-container {
     border: 1px solid black; /* 1px thickness, solid style, black color */
-    padding: 80px;           /* optional: adds space inside the border */
+    padding: 40px;           /* optional: adds space inside the border */
     border-radius: 6px;      /* optional: rounds the corners */
     display: flex;
     flex-direction: column;
@@ -205,4 +241,14 @@ body {
   flex-direction: row;
   gap: 20px;
   padding: 20px 0px;
+}
+
+.search-bar{
+  padding-bottom: 20px;
+}
+
+.watermark {
+  font-size: .9rem;
+  text-align: right;
+  margin-top: auto;
 }

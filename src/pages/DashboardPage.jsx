@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import StatsCard from '../components/StatsCard';
 import SearchBar from '../components/SearchBar';
 import ApplicationTable from '../components/ApplicationTable';
+import { FaGithub } from "react-icons/fa";
 
 function DashboardPage(){
     // hardcoded NO BACKEND YET
@@ -57,7 +58,11 @@ function DashboardPage(){
                 onEdit={handleEdit} 
                 onDelete={handleDelete} 
             />
+
+            <p className='watermark'><i>Job Tracker by IJ2005 <FaGithub /></i></p>
         </div>
+
+        
         </section>
 
         <p>Hello this is the dashboard page.</p>
