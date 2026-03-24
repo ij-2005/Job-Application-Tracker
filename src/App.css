@@ -76,6 +76,12 @@ body {
   cursor: pointer;            /* pointer cursor for dropdown */
 }
 
+/*ApplicationTable */
+
+.application-table {
+  margin: 20px 0px;
+}
+
 
 /* Pages Start here */
 
@@ -250,5 +256,6 @@ body {
 .watermark {
   font-size: .9rem;
   text-align: right;
-  margin-top: auto;
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
