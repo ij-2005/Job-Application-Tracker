@@ -1,6 +1,8 @@
 import '../App.css'
 import { useNavigate } from "react-router-dom";
 
+import Navbar from '../components/Navbar';
+
 function DashboardPage(){
     const navigate = useNavigate();
     
@@ -11,9 +13,7 @@ function DashboardPage(){
         <>
         <section id="center">
         <div className="dashboard-container">
-            <div className="titleHeader"> 
-                <h1>Job Tracker 101</h1>
-            </div>
+            <Navbar />
 
             <div className="componentsBar">
                 
